@@ -3,11 +3,16 @@
 @section('content')
     <div class="card">
         <div class="card-header">
-            <h4>Edit Product</h4>
+            <h4>Edit Portfolio
+                <a
+                    href="{{ url('portfolios') }}"
+                    class="btn btn-primary float-end btn-sm"
+                >back</a>
+            </h4>
         </div>
         <div class="card-body">
             <form
-                action="{{ url('update-product/' . $products->id) }}"
+                action="{{ url('update-portfolio/' . $portfolios->id) }}"
                 method="POST"
                 enctype="multipart/form-data"
             >
@@ -18,9 +23,10 @@
                     <div class="col-md-12 mb-3">
                         <select
                             class="form-select"
+                            name="category_id"
                             aria-label="Default select example"
                         >
-                            <option value="">{{ $products->category->name }}</option>
+                            <option value="{{ $portfolios->category_id }}">{{ $portfolios->category->name }}</option>
                         </select>
                     </div>
                     <div class="col-md-6 mb-3">
@@ -29,131 +35,79 @@
                             type="text"
                             class="form-control"
                             name="name"
-                            value="{{ $products->name }}"
+                            value="{{ $portfolios->name }}"
                         >
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="">Slug</label>
+                        <label for="">Location</label>
                         <input
                             type="text"
                             class="form-control"
-                            name="slug"
-                            value="{{ $products->slug }}"
-                        >
-                    </div>
-                    <div class="col-md-12
-                            mb-3">
-                        <label for="">Description</label>
-                        <textarea
-                            class="form-control"
-                            name="description"
-                            rows="3"
-                        >{{ $products->description }}</textarea>
-                    </div>
-                    <div class="col-md-12 mb-3">
-                        <label for="">Small Description</label>
-                        <textarea
-                            class="form-control"
-                            name="small_description"
-                            rows="3"
-                        >{{ $products->small_description }}</textarea>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="">Original Price</label>
-                        <input
-                            type="number"
-                            class="form-control"
-                            name="original_price"
-                            value="{{ $products->original_price }}"
-                        >
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="">Selling Price</label>
-                        <input
-                            type="number"
-                            class="form-control"
-                            name="selling_price"
-                            value="{{ $products->selling_price }}"
-                        >
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="">Quantity</label>
-                        <input
-                            type="number"
-                            class="form-control"
-                            name="qty"
-                            value="{{ $products->qty }}"
-                        >
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="">Tax</label>
-                        <input
-                            type="number"
-                            class="form-control"
-                            name="tax"
-                            value="{{ $products->tax }}"
-                        >
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="">Status</label>
-                        <input
-                            type="checkbox"
-                            {{ $products->status == '1' ? 'checked' : '' }}
-                            name="status"
-                        >
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="">Trending</label>
-                        <input
-                            type="checkbox"
-                            {{ $products->trending == '1' ? 'checked' : '' }}
-                            name="trending"
-                        >
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="">Meta Title</label>
-                        <input
-                            type="text"
-                            class="form-control"
-                            name="meta_title"
-                            value="{{ $products->meta_title }}"
+                            name="location"
+                            value="{{ $portfolios->location }}"
                         >
                     </div>
                     <div class="col-md-12 mb-3">
-                        <label for="">Meta Keywords</label>
-                        <textarea
-                            class="form-control"
-                            name="meta_keywords"
-                            rows="3"
-                        >{{ $products->meta_keywords }}</textarea>
-                    </div>
-                    <div class="col-md-12 mb-3">
-                        <label for="">Meta Description</label>
-                        <textarea
-                            class="form-control"
-                            name="meta_description"
-                            rows="3"
-                        >{{ $products->meta_description }}</textarea>
-                    </div>
-                    @if ($products->image)
-                        <img
-                            src="{{ asset('assets/uploads/products/' . $products->image) }}"
-                            alt="{{ $products->name }} image"
-                            style="width: 500px"
-                        >
-                    @endif
-                    <div class="col-md-12 mb-3">
+                        <label for="">Background Image</label>
+                        <li class="splide__slide">
+                            <img
+                                src="{{ asset('upload/Property/background/' . $portfolios->bg) }}"
+                                alt=""
+                            >
+                        </li>
                         <input
                             type="file"
                             name="image"
                             class="form-control"
                         >
+
                     </div>
-                    <div class="col-md-12 mb-3">
-                        <button
-                            class="btn btn-primary"
-                            type="submit"
-                        >Update</button>
+                    <div class="gallery-items   three-columns grid-small-pad lightgallery">
+                        @if (is_array($portfolios->images) || is_object($portfolios->images))
+                            @foreach ($portfolios->images as $key => $imagee)
+                                <div class="gallery-item">
+                                    <div class="grid-item-holder">
+                                        <div class="box-item">
+                                            <a
+                                                data-src="{{ asset('upload/Property/' . $imagee) }}"
+                                                class="popup-image"
+                                                data-sub-html="alteration in some"
+                                            >
+                                                <span class="overlay"></span>
+                                                <img
+                                                    src="{{ asset('upload/Property/' . $imagee) }}"
+                                                    alt=""
+                                                >
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        @else
+                            <li class="splide__slide">
+                                <img
+                                    class="pre_serve"
+                                    style="width: 10%,hight:10%"
+                                    src="{{ asset('upload/Property/' . $imagee) }}"
+                                    alt=""
+                                >
+                            </li>
+                        @endif
+                        <div class="col-md-12 mb-3">
+                            <input
+                                type="file"
+                                name="images[]"
+                                class="form-control-file"
+                                id="image"
+                                multiple
+                            >
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <button
+                                class="btn btn-primary"
+                                type="submit"
+                            >Update</button>
+                        </div>
                     </div>
                 </div>
             </form>

@@ -3,7 +3,12 @@
 @section('content')
     <div class="card">
         <div class="card-header">
-            <h4>Edit Category</h4>
+            <h4>Edit Category
+                <a
+                    href="{{ url('categories') }}"
+                    class="btn btn-primary float-end btn-sm"
+                >back</a>
+            </h4>
         </div>
         <div class="card-body">
             <form

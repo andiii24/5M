@@ -13,11 +13,11 @@
               href="{{ url('dashboard') }}"
           >
               <img
-                  src="{{ asset('assets/uploads/ecomm.png') }} "
+                  src="{{ asset('images/logo.png') }}"
                   class="navbar-brand-img h-100"
                   alt="main_logo"
               >
-              <span class="ms-1 font-weight-bold text-white">5M</span>
+              <span class="ms-1 font-weight-bold text-white"></span>
           </a>
       </div>
       <hr class="horizontal light mt-0 mb-2">

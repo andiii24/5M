@@ -10,7 +10,7 @@ class Portfolio extends Model
 {
     use HasFactory;
     protected $table = 'portfolios';
-    protected $fillable = ['name,category_id', 'images', 'location'];
+    protected $fillable = ['name,category_id', 'images', 'location', 'name', 'bg'];
     protected $casts = [
         'images' => 'array',
     ];

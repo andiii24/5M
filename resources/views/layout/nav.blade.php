@@ -5,7 +5,7 @@
         <!-- header logo -->
         <div class="logo-holder">
             <a href="index.html"><img
-                    src="images/logo.png"
+                    src="{{ asset('images/logo.png') }}"
                     alt=""
                 ></a>
         </div>

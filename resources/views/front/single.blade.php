@@ -9,9 +9,12 @@
         <div class="content">
             <section class="parallax-section">
                 <div class="parallax-inner">
+                    {{-- @php
+                        $firstImage = \Illuminate\Support\Arr::first($portfolio->images);
+                    @endphp --}}
                     <div
                         class="bg"
-                        data-bg="images/bg/177.jpg"
+                        data-bg="{{ asset('upload/Property/background/' . $portfolio->bg) }}"
                         data-top-bottom="transform: translateY(300px);"
                         data-bottom-top="transform: translateY(-300px);"
                     ></div>
@@ -21,13 +24,11 @@
                     <div class="page-title">
                         <div class="row">
                             <div class="col-md-6">
-                                <h2>Snap <strong> Group </strong></h2>
+                                <h2> <strong> {{ $portfolio->name }} </strong></h2>
                             </div>
                             <div class="col-md-6">
                                 <ul class="creat-list">
-                                    <li><a href="{{ url('/') }}">Home</a></li>
-                                    <li><a href={{ url('portfolio') }}">Portfolio</a></li>
-                                    <li><a href="{{ url('single-portfolio') }}">Portfolio single</a></li>
+                                    <li><a href="">{{ $portfolio->category->name }}</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -42,84 +43,66 @@
                     <!--=============== portfolio holder ===============-->
                     <div class="gallery-items   three-columns grid-small-pad lightgallery">
                         <!-- 1 -->
-                        <div class="gallery-item">
-                            <div class="grid-item-holder">
-                                <div class="box-item">
-                                    <a
-                                        data-src="{{ url('images/folio/thumbs/1.jpg') }}"
-                                        class="popup-image"
-                                        data-sub-html="alteration in some"
-                                    >
-                                        <span class="overlay"></span>
-                                        <img
-                                            src="{{ url('images/folio/thumbs/1.jpg') }}"
-                                            alt=""
+                        @if (is_array($portfolio->images) || is_object($portfolio->images))
+                            @foreach ($portfolio->images as $key => $imagee)
+                                <div class="gallery-item">
+                                    <div class="grid-item-holder">
+                                        <div class="box-item">
+                                            <a
+                                                data-src="{{ asset('upload/Property/' . $imagee) }}"
+                                                class="popup-image"
+                                                data-sub-html="alteration in some"
+                                            >
+                                                <span class="overlay"></span>
+                                                <img
+                                                    src="{{ asset('upload/Property/' . $imagee) }}"
+                                                    alt=""
+                                                >
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        @else
+                            <div class="gallery-item">
+                                <div class="grid-item-holder">
+                                    <div class="box-item">
+                                        <a
+                                            data-src="{{ asset('upload/Property/' . $imagee) }}"
+                                            class="popup-image"
+                                            data-sub-html="alteration in some"
                                         >
-                                    </a>
+                                            <span class="overlay"></span>
+                                            <img
+                                                src="{{ asset('upload/Property/' . $imagee) }}"
+                                                alt=""
+                                            >
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- 1 end-->
-                        <!-- 2 -->
-                        <div class="gallery-item">
-                            <div class="grid-item-holder">
-                                <div class="box-item">
-                                    <a
-                                        data-src="{{ url('images/folio/thumbs/6.jpg') }}"
-                                        class="popup-image"
-                                        data-sub-html="majority have"
-                                    >
-                                        <span class="overlay"></span>
-                                        <img
-                                            src="{{ url('images/folio/thumbs/6.jpg') }}"
-                                            alt=""
-                                        >
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 2 end-->
-                        <!-- 7 -->
-                        <div class="gallery-item">
-                            <div class="grid-item-holder">
-                                <div class="box-item">
-                                    <a
-                                        data-src="{{ url('images/folio/thumbs/7.jpg') }}"
-                                        class="popup-image"
-                                        data-sub-html="All the Lorem Ipsum"
-                                    >
-                                        <span class="overlay"></span>
-                                        <img
-                                            src="{{ url('images/folio/thumbs/7.jpg') }}"
-                                            alt=""
-                                        >
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 7 end-->
-                        <!-- 8 -->
-                        <div class="gallery-item">
-                            <div class="grid-item-holder">
-                                <div class="box-item">
-                                    <a
-                                        data-src="{{ url('images/folio/thumbs/17.jpg') }}"
-                                        class="popup-image"
-                                        data-sub-html="repeat predefined chunks as necessary"
-                                    >
-                                        <span class="overlay"></span>
-                                        <img
-                                            src="{{ url('images/folio/thumbs/17.jpg') }}"
-                                            alt=""
-                                        >
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 8 end-->
+                        @endif
                     </div>
-                    <!-- end gallery items -->
-                    <!-- custom-link-holder  end -->
+                    <div class="custom-inner-holder">
+                        <!-- 1 -->
+                        <div class="custom-inner">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3>Location : {{ $portfolio->location }}</h3>
+                                </div>
+                                <div
+                                    class="carousel-indicators col-md-8"
+                                    style="margin-left: 40% ;margin-top: 5%;"
+                                >
+                                    <a
+                                        href="{{ url('portfolios') }}"
+                                        class=" text-link"
+                                    >Back</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 1 -->
+                    </div>
                 </div>
             </section>
         </div>
