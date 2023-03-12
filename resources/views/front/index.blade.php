@@ -263,9 +263,7 @@
                             <div class="parallax-item left-direction">
                                 <div class="paralax-media">
                                     <ul class="creat-list">
-                                        <li><a href="#">Houses</a></li>
-                                        <li><a href="#">Design</a></li>
-                                        <li><a href="#">Skyscraper</a></li>
+                                        <li><a href="#">Residential spaces</a></li>
                                     </ul>
                                     <div class="paralax-wrap">
                                         <img
@@ -281,7 +279,7 @@
                                     data-bottom-top="transform: translateY(200px);"
                                 >
                                     <div class="parallax-deck-item">
-                                        <h3>Sed ut perspiciatis <strong>unde this</strong></h3>
+                                        <h3><strong>Residential spaces</strong></h3>
                                         <a
                                             href="portfolio-single.html"
                                             class="btn anim-button fl-l"
@@ -300,8 +298,8 @@
                             <div class="parallax-item right-direction">
                                 <div class="paralax-media">
                                     <ul class="creat-list">
-                                        <li><a href="#">Interior</a></li>
-                                        <li><a href="#">Wood</a></li>
+                                        <li><a href="#">Commercial spaces</a></li>
+                                        <li><a href="#">Furneture Work</a></li>
                                     </ul>
                                     <div class="paralax-wrap">
                                         <img
@@ -317,7 +315,7 @@
                                     data-bottom-top="transform: translateY(200px);"
                                 >
                                     <div class="parallax-deck-item">
-                                        <h3>Sed ut perspiciatis <strong>unde this</strong></h3>
+                                        <h3><strong>Office Work</strong></h3>
                                         <a
                                             href="portfolio-single.html"
                                             class="btn anim-button fl-l"
@@ -334,9 +332,7 @@
                             <div class="parallax-item left-direction">
                                 <div class="paralax-media">
                                     <ul class="creat-list">
-                                        <li><a href="#">Houses</a></li>
-                                        <li><a href="#">Design</a></li>
-                                        <li><a href="#">Skyscraper</a></li>
+                                        <li><a href="#">Hospitality spaces</a></li>
                                     </ul>
                                     <div class="paralax-wrap">
                                         <img
@@ -352,7 +348,7 @@
                                     data-bottom-top="transform: translateY(200px);"
                                 >
                                     <div class="parallax-deck-item">
-                                        <h3>Sed ut perspiciatis <strong>unde this</strong></h3>
+                                        <h3><strong>Sport Equipment Shop</strong></h3>
                                         <a
                                             href="portfolio-single.html"
                                             class="btn anim-button fl-l"
@@ -379,81 +375,81 @@
             </section>
         </div>
         <!-- content end -->
-        <!-- content footer-->
-        <div class="height-emulator"></div>
-        <footer class="content-footer">
-            <!--  container  -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <!-- Footer logo -->
-                        <div class="footer-item footer-logo">
-                            <a
-                                href="index.html"
-                                class="ajax"
-                            ><img
-                                    src="{{ asset('images/footer-logo.png') }}"
-                                    alt=""
-                                ></a>
-                            <p>Our team takes over everything, from an idea and concept development to realization. We believe in traditions and incorporate them within our innovations.Client is the soul of the project. </p>
-                        </div>
-                        <!-- Footer logo end -->
-                    </div>
-                    <!-- Footer info -->
-                    <div class="col-md-2">
-                        <div class="footer-item">
-                            <h4 class="text-link">Call</h4>
-                            <ul>
-                                <li><a href="#">+7(111)123456789</a></li>
-                                <li><a href="#">+1(000)987654321</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Footer info end-->
-                    <!-- Footer info -->
-                    <div class="col-md-2">
-                        <div class="footer-item">
-                            <h4 class="text-link">Write</h4>
-                            <ul>
-                                <li><a href="#">yourmail@domain.com</a></li>
-                                <li><a href="#">email@website.com</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Footer info-->
-                    <!-- Footer info end-->
-                    <div class="col-md-2">
-                        <div class="footer-item">
-                            <h4 class="text-link">Visit</h4>
-                            <ul>
-                                <li><span>USA 27TH BROOKLYN NY</span></li>
-                                <li> <a
-                                        href="#"
-                                        target="_blank"
-                                    >View on map</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Footer info end-->
-                </div>
-                <!-- Footer copyright -->
-                <div class="row">
-                    <div class="col-md-6"></div>
-                    <div class="col-md-6">
-                        <div class="footer-wrap">
-                            <span class="copyright"> &#169; Monolit 2016. All rights reserved.
-                            </span>
-                            <span class="to-top">To Top</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Footer copyright end -->
+        <!-- content  -->
+        <div class="content dark-bg">
+            <div
+                class="sect-subtitle left-align-dec"
+                data-top-bottom="transform: translateY(-200px);"
+                data-bottom-top="transform: translateY(200px);"
+            ><span>04</span></div>
+            <!-- parallax image  -->
+            <div class="parallax-inner">
+                <div
+                    class="bg"
+                    data-bg="images/bg/2.jpg"
+                    data-top-bottom="transform: translateY(300px);"
+                    data-bottom-top="transform: translateY(-300px);"
+                ></div>
+                <div class="overlay"></div>
             </div>
-            <!--  container  end -->
-            <!-- Hover animation  -->
-            <canvas class="particular"></canvas>
-            <!-- Hover animation  end -->
-        </footer>
+            <!-- parallax image  end-->
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h2 class="section-title">Testimonials</h2>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="testimon-slider-holder">
+                                <div class="testimon-slider">
+                                    <!-- 1 -->
+                                    <div class="item">
+                                        <h3>Ermias Getachew</h3>
+                                        <p>"All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words"</p>
+                                        <a
+                                            href="#"
+                                            class="text-link"
+                                            target="_blank"
+                                        >Via Twitter</a>
+                                    </div>
+                                    <!-- 1 end-->
+                                    <!-- 2 -->
+                                    <div class="item">
+                                        <h3>Liza Mirovsky</h3>
+                                        <p>"Vestibulum orci felis, ullamcorper non condimentum non, ultrices ac nunc. Mauris non ligula suscipit, vulputate mi accumsan, dapibus felis. Nullam sed sapien dui. Nulla auctor sit amet sem non porta. Integer iaculis tellus nulla, quis imperdiet magna venenatis
+                                            vitae"</p>
+                                        <a
+                                            href="#"
+                                            class="text-link"
+                                            target="_blank"
+                                        >Via Facebook</a>
+                                    </div>
+                                    <!-- 2 end-->
+                                    <!-- 3 -->
+                                    <div class="item">
+                                        <h3>Gary Trust</h3>
+                                        <p>"If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."</p>
+                                        <a
+                                            href="#"
+                                            class="text-link"
+                                            target="_blank"
+                                        >Via Myspace</a>
+                                    </div>
+                                    <!-- 3 end-->
+                                </div>
+                                <div class="customNavigation">
+                                    <a class="prev-slide transition"><i class="fa fa-angle-left"></i></a>
+                                    <a class="next-slide transition"><i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- content end -->
+        <!-- content footer-->
+        @include('layout.footer')
         <!-- content footer end -->
         <!-- share  -->
         <div class="share-inner">

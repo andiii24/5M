@@ -1,10 +1,11 @@
+{{-- <header class="fw-head"> --}}
 <header>
     <!-- header-inner  -->
     <div class="header-inner">
         <!-- header logo -->
         <div class="logo-holder">
             <a href="index.html"><img
-                    src="{{ asset('images/logo.png') }}"
+                    src="images/logo.png"
                     alt=""
                 ></a>
         </div>
@@ -18,26 +19,20 @@
         <div class="nav-holder">
             <nav>
                 <ul>
-                    <li>
-                        <a
-                            href="index.html"
+                    <li><a href="onepage-1.html#sec1"><span>Home</span></a></li>
+                    <li><a href="onepage-1.html#sec2"><span>About</span></a></li>
+                    <li><a
+                            href="onepage-1.html#sec3"
                             class="act-link"
-                        >Home</a>
-                        <!--second level -->
-                        <!--second level end-->
-                    </li>
-                    <li>
-                        <a href="about.html">About us </a>
-                        <!-- Scroll navigation  -->
-                    </li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li>
-                        <a href="#">Pages</a>
-                        <!--second level end-->
-                        <!--second level end-->
-                    </li>
+                        ><span>Works</span></a></li>
+                    <li><a href="onepage-1.html#sec4"><span>Skills</span></a></li>
+                    <li><a href="onepage-1.html#sec5"><span>Team</span></a></li>
+                    <li><a href="onepage-1.html#sec6"><span>Services</span></a></li>
+                    <li><a href="onepage-1.html#sec7"><span>Contacts</span></a></li>
+                    <li><a
+                            href="blog.html"
+                            class="external"
+                        ><span>Blog</span></a></li>
                 </ul>
             </nav>
         </div>
