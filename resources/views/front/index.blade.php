@@ -240,13 +240,6 @@
         <!-- content   -->
         <div class="content">
             <section>
-                <!-- section number     -->
-                <div
-                    class="sect-subtitle right-align-dec"
-                    data-top-bottom="transform: translateY(200px);"
-                    data-bottom-top="transform: translateY(-200px);"
-                ><span>03</span></div>
-                <!-- section number   end -->
                 <!--  container  -->
                 <div class="container">
                     <!--  section title -->
@@ -348,7 +341,7 @@
                                     data-bottom-top="transform: translateY(200px);"
                                 >
                                     <div class="parallax-deck-item">
-                                        <h3><strong>Sport Equipment Shop</strong></h3>
+                                        <h3><strong>Bar & Restourant</strong></h3>
                                         <a
                                             href="portfolio-single.html"
                                             class="btn anim-button fl-l"
@@ -360,6 +353,40 @@
                         <div class="col-md-5"></div>
                     </div>
                     <!-- 3 end-->
+                    <!-- 4 -->
+                    <div class="row">
+                        <div class="col-md-5"></div>
+                        <div class="col-md-7">
+                            <div class="parallax-item right-direction">
+                                <div class="paralax-media">
+                                    <ul class="creat-list">
+                                        <li><a href="#">Hospitality Space</a></li>
+                                    </ul>
+                                    <div class="paralax-wrap">
+                                        <img
+                                            src="{{ asset('images/folio/thumbs/4.jpg') }}"
+                                            class="respimg"
+                                            alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="parallax-deck"
+                                    data-top-bottom="transform: translateY(-200px);"
+                                    data-bottom-top="transform: translateY(200px);"
+                                >
+                                    <div class="parallax-deck-item">
+                                        <h3><strong>Caffee</strong></h3>
+                                        <a
+                                            href="portfolio-single.html"
+                                            class="btn anim-button fl-l"
+                                        ><span>View Project</span><i class="fa fa-long-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 end-->
                     <!-- custom-link-holder  -->
                     <div class="custom-link-holder">
                         <a
