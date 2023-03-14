@@ -12,8 +12,6 @@
                     <tr>
                         <th>Id</th>
                         <th>Name</th>
-                        <th>Description</th>
-                        <th>Image</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -22,13 +20,6 @@
                         <tr>
                             <td>{{ $cat->id }}</td>
                             <td>{{ $cat->name }}</td>
-                            <td>{{ Str::limit($cat->description, 50) }}</td>
-                            <td><img
-                                    style="width: 70px;height:70px;"
-                                    class="cate-img"
-                                    src="{{ asset('assets/uploads/category/' . $cat->image) }}"
-                                    alt="{{ $cat->name }} image"
-                                ></td>
                             <td>
                                 <a
                                     href="{{ url('edit-category/' . $cat->id) }}"
