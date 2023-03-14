@@ -19,14 +19,13 @@
         <div class="nav-holder">
             <nav>
                 <ul>
-                    <li><a href="onepage-1.html#sec1"><span>Home</span></a></li>
-                    <li><a href="onepage-1.html#sec2"><span>About</span></a></li>
                     <li><a
-                            href="onepage-1.html#sec3"
+                            href="{{ url('/') }}"
                             class="act-link"
-                        ><span>Works</span></a></li>
-                    <li><a href="onepage-1.html#sec4"><span>Skills</span></a></li>
-                    <li><a href="onepage-1.html#sec5"><span>Team</span></a></li>
+                        ><span>Home</span></a></li>
+                    <li><a href="onepage-1.html#sec2"><span>About</span></a></li>
+                    <li><a href="{{ url('portfolio') }}"><span>Portfolio</span></a></li>
+                    <li><a href="onepage-1.html#sec3"><span>Works</span></a></li>
                     <li><a href="onepage-1.html#sec6"><span>Services</span></a></li>
                     <li><a href="onepage-1.html#sec7"><span>Contacts</span></a></li>
                     <li><a

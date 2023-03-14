@@ -20,8 +20,8 @@
                 <div class="overlay"></div>
                 <!-- Hero text   -->
                 <div class="hero-wrap-item center-item">
-                    <h2> Monolit Studio</h2>
-                    <h3>Architecture</h3>
+                    <h2> 5M Design Studio</h2>
+                    <h3></h3>
                 </div>
                 <!-- Hero text   end-->
                 <a
@@ -37,13 +37,6 @@
         <!-- content  -->
         <div class="content">
             <section id="sec1">
-                <!-- section number   -->
-                <div
-                    class="sect-subtitle right-align-dec"
-                    data-top-bottom="transform: translateY(200px);"
-                    data-bottom-top="transform: translateY(-200px);"
-                ><span>01</span></div>
-                <!-- section number  end  -->
                 <!--  container  -->
                 <div class="container">
                     <div class="row">
@@ -154,16 +147,11 @@
                 <!--  container end  -->
             </section>
         </div>
-        <!-- content  end  -->
-        <!-- content   -->
-        <div class="content dark-bg">
-            <!-- section number   -->
-            <div
-                class="sect-subtitle left-align-dec"
-                data-top-bottom="transform: translateY(-200px);"
-                data-bottom-top="transform: translateY(200px);"
-            ><span>02</span></div>
-            <!-- section number   end -->
+        <!-- content  -->
+
+        <!-- content end -->
+        <div class="content">
+
             <!-- parallax image  -->
             <div class="parallax-inner">
                 <div
@@ -180,7 +168,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
-                            <h2 class="section-title">Some Interisting <strong> Facts</strong></h2>
+                            <h2
+                                class="section-title"
+                                style="color:rgb(255, 255, 255)"
+                            >Some Interisting <strong> Facts</strong></h2>
                         </div>
 
                     </div>
@@ -237,6 +228,7 @@
             </section>
         </div>
         <!-- content  end  -->
+
         <!-- content   -->
         <div class="content">
             <section>
@@ -274,7 +266,7 @@
                                     <div class="parallax-deck-item">
                                         <h3><strong>Residential spaces</strong></h3>
                                         <a
-                                            href="portfolio-single.html"
+                                            href="{{ url('portfolio') }}"
                                             class="btn anim-button fl-l"
                                         ><span>View Project</span><i class="fa fa-long-arrow-right"></i></a>
                                     </div>
@@ -378,7 +370,7 @@
                                     <div class="parallax-deck-item">
                                         <h3><strong>Caffee</strong></h3>
                                         <a
-                                            href="portfolio-single.html"
+                                            href="{{ url('portfolio') }}"
                                             class="btn anim-button fl-l"
                                         ><span>View Project</span><i class="fa fa-long-arrow-right"></i></a>
                                     </div>
@@ -390,7 +382,7 @@
                     <!-- custom-link-holder  -->
                     <div class="custom-link-holder">
                         <a
-                            href="portfolio.html"
+                            href="{{ url('portfolio') }}"
                             class="btn anim-button"
                             data-top-bottom="transform: translateY(-50px);"
                             data-bottom-top="transform: translateY(50px);"
@@ -402,74 +394,236 @@
             </section>
         </div>
         <!-- content end -->
-        <!-- content  -->
         <div class="content dark-bg">
-            <div
-                class="sect-subtitle left-align-dec"
-                data-top-bottom="transform: translateY(-200px);"
-                data-bottom-top="transform: translateY(200px);"
-            ><span>04</span></div>
             <!-- parallax image  -->
             <div class="parallax-inner">
                 <div
                     class="bg"
-                    data-bg="images/bg/2.jpg"
+                    data-bg="images/bg/17.jpg"
                     data-top-bottom="transform: translateY(300px);"
                     data-bottom-top="transform: translateY(-300px);"
                 ></div>
                 <div class="overlay"></div>
             </div>
-            <!-- parallax image  end-->
+            <!-- parallax image  end -->
             <section>
+                <!--  container  -->
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
-                            <h2 class="section-title">Testimonials</h2>
+                            <h2 class="section-title">Our partners <strong> and Clients</strong></h2>
                         </div>
                         <div class="col-md-8">
-                            <div class="testimon-slider-holder">
-                                <div class="testimon-slider">
-                                    <!-- 1 -->
-                                    <div class="item">
-                                        <h3>Ermias Getachew</h3>
-                                        <p>"All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words"</p>
-                                        <a
-                                            href="#"
-                                            class="text-link"
-                                            target="_blank"
-                                        >Via Twitter</a>
-                                    </div>
-                                    <!-- 1 end-->
-                                    <!-- 2 -->
-                                    <div class="item">
-                                        <h3>Liza Mirovsky</h3>
-                                        <p>"Vestibulum orci felis, ullamcorper non condimentum non, ultrices ac nunc. Mauris non ligula suscipit, vulputate mi accumsan, dapibus felis. Nullam sed sapien dui. Nulla auctor sit amet sem non porta. Integer iaculis tellus nulla, quis imperdiet magna venenatis
-                                            vitae"</p>
-                                        <a
-                                            href="#"
-                                            class="text-link"
-                                            target="_blank"
-                                        >Via Facebook</a>
-                                    </div>
-                                    <!-- 2 end-->
-                                    <!-- 3 -->
-                                    <div class="item">
-                                        <h3>Gary Trust</h3>
-                                        <p>"If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."</p>
-                                        <a
-                                            href="#"
-                                            class="text-link"
-                                            target="_blank"
-                                        >Via Myspace</a>
-                                    </div>
-                                    <!-- 3 end-->
-                                </div>
-                                <div class="customNavigation">
-                                    <a class="prev-slide transition"><i class="fa fa-angle-left"></i></a>
-                                    <a class="next-slide transition"><i class="fa fa-angle-right"></i></a>
+                            <p>Our team takes over everything, from an idea and concept development to realization. We believe in traditions and incorporate them within our innovations. All our projects incorporate a unique artistic image and functional solutions. Client is the soul of the project. Our
+                                main goal is to illustrate his/hers values and individuality through design.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-8">
+                            <!-- facts   -->
+                            <div class="clients-list">
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                ><img
+                                        src="images/clients/1.png"
+                                        alt=""
+                                    ></a>
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                ><img
+                                        src="images/clients/2.png"
+                                        alt=""
+                                    ></a>
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                ><img
+                                        src="images/clients/3.png"
+                                        alt=""
+                                    ></a>
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                ><img
+                                        src="images/clients/4.png"
+                                        alt=""
+                                    ></a>
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                ><img
+                                        src="images/clients/5.png"
+                                        alt=""
+                                    ></a>
+                            </div>
+                            <!-- facts   end -->
+                        </div>
+                    </div>
+                </div>
+                <!--  container  end -->
+            </section>
+        </div>
+        <!-- content  -->
+        <div
+            class="content"
+            id="sec6"
+        >
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h2 class="section-title">What <strong>We Do </strong></h2>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure
+                                there isn't anything embarrassing hidden in the middle of text. </p>
+                        </div>
+                    </div>
+                    <div class="services-holder">
+                        <!-- 1 -->
+                        <a
+                            class="serv-item"
+                            href="#ser1"
+                        >
+                            <div class="serv-item-inner">
+                                <img
+                                    src="images/folio/thumbs/3.jpg"
+                                    alt=""
+                                >
+                                <div class="ser-title">
+                                    <h3>Interior</h3>
                                 </div>
                             </div>
+                        </a>
+                        <!-- 1 end-->
+                        <!-- 2 -->
+                        <a
+                            class="serv-item"
+                            href="#ser2"
+                        >
+                            <div class="serv-item-inner">
+                                <img
+                                    src="images/folio/thumbs/14.jpg"
+                                    alt=""
+                                >
+                                <div class="ser-title">
+                                    <h3>Construction</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 2 end -->
+                        <!-- 3 -->
+                        <a
+                            class="serv-item"
+                            href="#ser3"
+                        >
+                            <div class="serv-item-inner">
+                                <img
+                                    src="images/folio/thumbs/1.jpg"
+                                    alt=""
+                                >
+                                <div class="ser-title">
+                                    <h3>Architecture</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 3 end -->
+                        <!-- 4 -->
+                        <a
+                            class="serv-item"
+                            href="#ser4"
+                        >
+                            <div class="serv-item-inner">
+                                <img
+                                    src="images/folio/thumbs/4.jpg"
+                                    alt=""
+                                >
+                                <div class="ser-title">
+                                    <h3>Visualization</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 4 end-->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- serv-post  -->
+                            <div class="serv-post">
+                                <!-- 1 -->
+                                <div
+                                    id="ser1"
+                                    class="serv-details"
+                                >
+                                    <h3>Interior</h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to
+                                        be sure there isn't anything embarrassing hidden in the middle of text. </p>
+                                    <p> If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+                                    <ul class="ser-list">
+                                        <li>Curabitur mi sem</li>
+                                        <li>Euismod in velit</li>
+                                        <li>Proin eu felis hendrerit</li>
+                                    </ul>
+                                    <span class="price">1200$-5000$</span>
+                                </div>
+                                <!-- 1 end -->
+                                <!-- 2 -->
+                                <div
+                                    id="ser2"
+                                    class="serv-details"
+                                >
+                                    <h3>Construction</h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to
+                                        be sure there isn't anything embarrassing hidden in the middle of text. </p>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to
+                                        be sure there isn't anything embarrassing hidden in the middle of text. </p>
+                                    <p> If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+                                    <ul class="ser-list">
+                                        <li>Curabitur mi sem</li>
+                                        <li>Euismod in velit</li>
+                                        <li>Proin eu felis hendrerit</li>
+                                    </ul>
+                                    <span class="price">3200$-8800$</span>
+                                </div>
+                                <!-- 2 end -->
+                                <!-- 3 -->
+                                <div
+                                    id="ser3"
+                                    class="serv-details"
+                                >
+                                    <h3>Architecture</h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to
+                                        be sure there isn't anything embarrassing hidden in the middle of text. You need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+                                    <p> If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. You need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+                                    <ul class="ser-list">
+                                        <li>Architecture</li>
+                                        <li>Euismod in velit</li>
+                                        <li>Proin eu felis hendrerit</li>
+                                    </ul>
+                                    <span class="price">12300$-53000$</span>
+                                </div>
+                                <!-- 3 end -->
+                                <!-- 4 -->
+                                <div
+                                    id="ser4"
+                                    class="serv-details"
+                                >
+                                    <h3>Visualization</h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to
+                                        be sure there isn't anything embarrassing hidden in the middle of text. </p>
+                                    <p> If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+                                    <ul class="ser-list">
+                                        <li>Curabitur mi sem</li>
+                                        <li>Euismod in velit</li>
+                                        <li>Proin eu felis hendrerit</li>
+                                    </ul>
+                                    <span class="price">3200$-6500$</span>
+                                </div>
+                                <!-- 4 end -->
+                            </div>
+                            <!-- serv-post end-->
                         </div>
+                        <div class="col-md-6"></div>
                     </div>
                 </div>
             </section>

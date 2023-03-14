@@ -32,13 +32,13 @@
             <div class="footer-social">
                 <ul>
                     <li><a
-                            href="#"
+                            href="https://www.facebook.com/profile.php?id=100085851463134"
                             target="_blank"
                         ><i class="fa fa-facebook"></i></a></li>
                     <li><a
-                            href="#"
+                            href="https://www.t.me/mussie_5m"
                             target="_blank"
-                        ><i class="fa fa-twitter"></i></a></li>
+                        ><i class="fa fa-paper-plane"></i></a></li>
                     <li><a
                             href="#"
                             target="_blank"
