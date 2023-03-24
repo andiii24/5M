@@ -14,7 +14,8 @@ class PortfolioController extends Controller
     public function index()
     {
         $portfolios = Portfolio::all();
-        return view('front.portfolio', compact('portfolios'));
+        $categories = Category::all();
+        return view('front.portfolio', compact('portfolios', 'categories'));
     }
     public function single($id)
     {
