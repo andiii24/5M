@@ -9,7 +9,6 @@
             <form
                 action="{{ url('insert-category') }}"
                 method="POST"
-                enctype="multipart/form-data"
             >
                 @csrf
 

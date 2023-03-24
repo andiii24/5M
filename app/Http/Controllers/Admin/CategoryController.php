@@ -19,11 +19,17 @@ class CategoryController extends Controller
     }
     public function add(Request $request)
     {
+        $validatedData = $request->validate([
+            'name' => 'required|unique:categories|max:255',
+        ]);
+
         $category = new Category();
-        $category->name = $request->input('name');
+        $category->name = $validatedData['name'];
+        $category->slug = Str::slug($validatedData['name'], '-');
         $category->save();
 
-        return redirect('/categories')->with('status', 'Category added Successfully!');
+        return redirect()->route('categories.index')
+            ->with('success', 'Category created successfully.');
     }
     public function edit($id)
     {
@@ -35,8 +41,12 @@ class CategoryController extends Controller
     public function update(Request $request, $id)
     {
         //Check edit and upload image if there is none
+        $validatedData = $request->validate([
+            'name' => 'required|unique:categories,name,' . $category->id . '|max:255',
+        ]);
         $category = Category::find($id);
-        $category->name = $request->input('name');
+        $category->name = $validatedData['name'];
+        $category->slug = Str::slug($validatedData['name'], '-');
         $category->update();
 
         return redirect('categories')->with('status', 'Category Updated Successfully!!!');

@@ -15,26 +15,13 @@
                         class="gallery-filter transition2 gallery-filter_active"
                         data-filter="*"
                     >All</a>
-                    <a
-                        href="#"
-                        class="gallery-filter transition2"
-                        data-filter=".interior"
-                    >Interior</a>
-                    <a
-                        href="#"
-                        class="gallery-filter transition2"
-                        data-filter=".construction"
-                    >Construction</a>
-                    <a
-                        href="#"
-                        class="gallery-filter transition2"
-                        data-filter=".design"
-                    >Design</a>
-                    <a
-                        href="#"
-                        class="gallery-filter transition2"
-                        data-filter=".houses"
-                    >Houses</a>
+                    @foreach ($categories as $category)
+                        <a
+                            href="#"
+                            class="gallery-filter transition2"
+                            data-filter=".{{ $category->slug }}"
+                        >{{ $category->name }}</a>
+                    @endforeach
                 </div>
                 <div class="clearfix"></div>
                 <div class="filter-button">Filter</div>

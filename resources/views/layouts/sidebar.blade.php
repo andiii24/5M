@@ -18,7 +18,7 @@
                   alt="main_logo"
               >
               <span class="ms-1 font-weight-bold text-white"></span>
-          </a>
+          </a>or
       </div>
       <hr class="horizontal light mt-0 mb-2">
       <div
