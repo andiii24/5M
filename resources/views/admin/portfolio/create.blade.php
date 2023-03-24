@@ -48,6 +48,15 @@
                             required
                         >
                     </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="">Video URL</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            name="url"
+                            required
+                        >
+                    </div>
                     <div class="col-md-12 mb-3">
                         <label for="">Background Photo</label>
                         <input

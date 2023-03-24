@@ -38,8 +38,9 @@ class PortfolioController extends Controller
             'name' => 'required | max:255',
             'category_id' => 'required | numeric',
             'location' => 'required',
-            'bg' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
-            'images.*' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
+            'url' => 'max:255',
+            'bg' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'images.*' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
         $portfolio = new Portfolio;
 
@@ -74,6 +75,7 @@ class PortfolioController extends Controller
         $portfolio->images = $images;
 
         $portfolio->name = $request->input('name');
+        $portfolio->url = $request->input('url');
         $portfolio->category_id = $request->input('category_id');
         $portfolio->location = $request->input('location');
         $portfolio->save();
@@ -144,6 +146,7 @@ class PortfolioController extends Controller
         $portfolio->images = $images;
 
         $portfolio->name = $request->input('name');
+        $portfolio->url = $request->input('url');
         $portfolio->category_id = $request->input('category_id');
         $portfolio->location = $request->input('location');
         $portfolio->save();

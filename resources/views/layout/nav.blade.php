@@ -4,7 +4,7 @@
     <div class="header-inner">
         <!-- header logo -->
         <div class="logo-holder">
-            <a href="index.html"><img
+            <a href="{{ url('/') }}"><img
                     src="{{ asset('images/logo.png') }}"
                     alt=""
                 ></a>

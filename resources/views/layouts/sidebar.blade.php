@@ -10,7 +10,7 @@
           ></i>
           <a
               class="navbar-brand m-0"
-              href="{{ url('dashboard') }}"
+              href="{{ url('/') }}"
           >
               <img
                   src="{{ asset('images/logo.png') }}"
