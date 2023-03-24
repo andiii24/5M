@@ -54,7 +54,6 @@
                             type="text"
                             class="form-control"
                             name="url"
-                            required
                         >
                     </div>
                     <div class="col-md-12 mb-3">

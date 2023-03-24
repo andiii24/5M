@@ -40,7 +40,7 @@
                     >
                         <!-- portfolio item -->
                         @foreach ($portfolios as $item)
-                            <div class="portfolio_item interior design">
+                            <div class="portfolio_item {{ $item->category->slug }}">
                                 @if (is_array($item->images) || is_object($item->images))
                                     @php
                                         $firstImage = \Illuminate\Support\Arr::first($item->images);

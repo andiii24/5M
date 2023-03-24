@@ -17,7 +17,7 @@ class CreatePortfoliosTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('images');
-            $table->string('url');
+            $table->string('url')->nullable();
             $table->string('bg');
             $table->string('location')->required();
             $table->string('category_id');
