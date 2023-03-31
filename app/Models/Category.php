@@ -20,6 +20,6 @@ class Category extends Model
     }
     public function portfolio()
     {
-        return $this->hasMany(Portfolio::class);
+        return $this->hasMany(Portfolio::class)->onDelete('cascade');
     }
 }

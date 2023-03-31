@@ -20,8 +20,12 @@ class CreatePortfoliosTable extends Migration
             $table->string('url')->nullable();
             $table->string('bg');
             $table->string('location')->required();
-            $table->string('category_id');
+            $table->unsignedBigInteger('category_id');
+            $table->foreign('category_id')
+                ->references('id')->on('categories')
+                ->onDelete('cascade');
             $table->timestamps();
+
         });
     }
 
